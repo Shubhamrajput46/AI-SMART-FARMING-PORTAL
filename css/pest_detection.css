@@ -1,0 +1,260 @@
+/* ==========================================
+   AI SMART FARMING PORTAL
+   Pest & Disease Detection
+========================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f4f7f6;
+}
+
+/* ===========================
+Sidebar
+=========================== */
+
+.sidebar{
+    min-height:100vh;
+    background:#1b5e20;
+    color:#fff;
+    padding:20px;
+    position:sticky;
+    top:0;
+}
+
+.logo{
+    text-align:center;
+    margin-bottom:25px;
+}
+
+.logo h3{
+    font-size:24px;
+    font-weight:700;
+}
+
+.nav-link{
+    color:#d7ffd9;
+    margin:6px 0;
+    border-radius:10px;
+    padding:12px 15px;
+    transition:.3s;
+}
+
+.nav-link:hover{
+    background:#2e7d32;
+    color:#fff;
+}
+
+.nav-link.active{
+    background:#43a047;
+    color:#fff;
+}
+
+.nav-link i{
+    margin-right:10px;
+}
+
+/* ===========================
+Main
+=========================== */
+
+.main-content{
+    padding:30px;
+}
+
+.topbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:20px;
+}
+
+.topbar h2{
+    font-weight:700;
+    color:#1b5e20;
+}
+
+.topbar p{
+    color:#777;
+}
+
+/* ===========================
+Cards
+=========================== */
+
+.upload-card,
+.result-card{
+    background:#fff;
+    border-radius:18px;
+    padding:25px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+/* ===========================
+Upload Box
+=========================== */
+
+.upload-box{
+    border:3px dashed #43a047;
+    border-radius:15px;
+    text-align:center;
+    padding:45px 20px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.upload-box:hover{
+    background:#f0fff4;
+}
+
+.upload-icon{
+    font-size:60px;
+    color:#43a047;
+}
+
+.upload-box input{
+    margin-top:20px;
+}
+
+/* ===========================
+Preview
+=========================== */
+
+.preview-box{
+    width:100%;
+    height:280px;
+    border-radius:15px;
+    overflow:hidden;
+    background:#f3f3f3;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.preview-box img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+/* ===========================
+Result
+=========================== */
+
+.result-item{
+    display:flex;
+    justify-content:space-between;
+    padding:15px 0;
+    border-bottom:1px solid #eee;
+    font-size:17px;
+}
+
+.progress{
+    height:12px;
+    border-radius:10px;
+}
+
+/* ===========================
+Info Cards
+=========================== */
+
+.info-card{
+    background:#fff;
+    border-radius:18px;
+    padding:25px;
+    text-align:center;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.info-card:hover{
+    transform:translateY(-8px);
+}
+
+.card-icon{
+    width:70px;
+    height:70px;
+    border-radius:50%;
+    color:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:28px;
+    margin:auto;
+    margin-bottom:18px;
+}
+
+.info-card h4{
+    margin-bottom:18px;
+    font-weight:700;
+}
+
+.info-card ul{
+    list-style:none;
+    padding:0;
+}
+
+.info-card ul li{
+    margin:12px 0;
+}
+
+/* ===========================
+History Table
+=========================== */
+
+.table{
+    margin-bottom:0;
+}
+
+.table thead{
+    background:#43a047;
+    color:#fff;
+}
+
+.table tbody tr:hover{
+    background:#f5fff6;
+}
+
+/* ===========================
+Buttons
+=========================== */
+
+.btn-success{
+    background:#43a047;
+    border:none;
+}
+
+.btn-success:hover{
+    background:#2e7d32;
+}
+
+/* ===========================
+Responsive
+=========================== */
+
+@media(max-width:991px){
+
+.sidebar{
+    min-height:auto;
+}
+
+.topbar{
+    flex-direction:column;
+    align-items:flex-start;
+    gap:15px;
+}
+
+.main-content{
+    padding:20px;
+}
+
+.preview-box{
+    height:220px;
+}
+
+}

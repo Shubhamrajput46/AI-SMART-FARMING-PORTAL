@@ -1,0 +1,296 @@
+/* ===================================
+   Weather Dashboard CSS
+=================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#f4f8f4;
+    font-family:Arial,sans-serif;
+}
+
+/* Layout */
+
+.dashboard-container{
+    display:flex;
+}
+
+/* Sidebar */
+
+.sidebar{
+    width:260px;
+    height:100vh;
+    background:#198754;
+    color:white;
+    position:fixed;
+    left:0;
+    top:0;
+}
+
+.logo{
+    text-align:center;
+    font-size:28px;
+    font-weight:bold;
+    padding:30px;
+    border-bottom:1px solid rgba(255,255,255,.3);
+}
+
+.sidebar ul{
+    list-style:none;
+    padding:20px;
+}
+
+.sidebar ul li{
+    margin-bottom:10px;
+    border-radius:12px;
+}
+
+.sidebar ul li a{
+    display:block;
+    padding:15px;
+    color:white;
+    text-decoration:none;
+    border-radius:12px;
+}
+
+.sidebar ul li a i{
+    margin-right:15px;
+}
+
+.sidebar ul li:hover,
+.sidebar ul li.active{
+    background:white;
+}
+
+.sidebar ul li:hover a,
+.sidebar ul li.active a{
+    color:#198754;
+}
+
+/* Main */
+
+.main-content{
+    margin-left:260px;
+    width:calc(100% - 260px);
+}
+
+/* Navbar */
+
+.topbar{
+    height:80px;
+    background:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 40px;
+    box-shadow:0 3px 10px rgba(0,0,0,.1);
+}
+
+.topbar h2{
+    color:#198754;
+    font-weight:bold;
+}
+
+/* Content */
+
+.content{
+    padding:30px;
+}
+
+/* Current Weather */
+
+.weather-card{
+
+    background:linear-gradient(135deg,#198754,#42b883);
+
+    color:white;
+
+    border-radius:20px;
+
+    padding:30px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.15);
+
+    transition:.3s;
+
+}
+
+.weather-card:hover{
+
+    transform:translateY(-6px);
+
+}
+
+.weather-card h2{
+
+    font-size:50px;
+
+    font-weight:bold;
+
+}
+
+.weather-card p{
+
+    margin-top:10px;
+
+}
+
+.weather-icon{
+
+    font-size:70px;
+
+}
+
+/* Small Cards */
+
+.small-card{
+
+    background:white;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    padding:25px;
+
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+}
+
+.small-card:hover{
+
+    transform:translateY(-5px);
+
+}
+
+.small-card i{
+
+    font-size:40px;
+
+    color:#198754;
+
+    margin-bottom:15px;
+
+}
+
+.small-card h4{
+
+    color:#666;
+
+}
+
+.small-card h3{
+
+    color:#198754;
+
+    font-weight:bold;
+
+}
+
+/* Forecast */
+
+.forecast-card{
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:25px;
+
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+
+}
+
+.forecast-card h4{
+
+    color:#198754;
+
+    font-weight:bold;
+
+}
+
+.table thead{
+
+    background:#198754;
+
+    color:white;
+
+}
+
+.table tbody tr:hover{
+
+    background:#f4f8f4;
+
+}
+
+/* Alert */
+
+.alert{
+
+    border-radius:15px;
+
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+.sidebar{
+
+    position:relative;
+
+    width:100%;
+
+    height:auto;
+
+}
+
+.dashboard-container{
+
+    display:block;
+
+}
+
+.main-content{
+
+    margin-left:0;
+
+    width:100%;
+
+}
+
+.topbar{
+
+    padding:0 20px;
+
+}
+
+.content{
+
+    padding:15px;
+
+}
+
+.weather-card{
+
+    flex-direction:column;
+
+    text-align:center;
+
+    gap:20px;
+
+}
+
+}

@@ -1,0 +1,333 @@
+/* ===========================
+   AI Smart Farming Portal
+   Login Page
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+
+    background:#eef7f1;
+    overflow:hidden;
+
+}
+
+/* ===========================
+   LEFT PANEL
+=========================== */
+
+.left-panel{
+
+    background:linear-gradient(135deg,#0b8f4d,#27ae60);
+    color:white;
+    position:relative;
+
+}
+
+.overlay{
+
+    width:100%;
+    height:100%;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    padding:60px;
+
+}
+
+.hero-content{
+
+    max-width:550px;
+
+}
+
+.hero-content h1{
+
+    font-size:45px;
+    font-weight:700;
+    margin-bottom:20px;
+
+}
+
+.hero-content h4{
+
+    font-size:26px;
+    margin-bottom:20px;
+
+}
+
+.hero-content p{
+
+    font-size:18px;
+    line-height:30px;
+    opacity:.95;
+
+}
+
+/* ===========================
+   FEATURE BOX
+=========================== */
+
+.features{
+
+    margin-top:40px;
+
+}
+
+.feature{
+
+    background:rgba(255,255,255,.18);
+
+    padding:15px 20px;
+
+    border-radius:12px;
+
+    margin-bottom:15px;
+
+    font-size:18px;
+
+    backdrop-filter:blur(12px);
+
+    transition:.3s;
+
+}
+
+.feature:hover{
+
+    transform:translateX(8px);
+
+    background:rgba(255,255,255,.30);
+
+}
+
+/* ===========================
+   RIGHT SIDE
+=========================== */
+
+.login-section{
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:#f7fdf9;
+
+}
+
+/* ===========================
+   LOGIN CARD
+=========================== */
+
+.login-card{
+
+    width:430px;
+
+    background:white;
+
+    padding:45px;
+
+    border-radius:25px;
+
+    box-shadow:
+    0 20px 60px rgba(0,0,0,.15);
+
+}
+
+.logo{
+
+    width:90px;
+
+    height:90px;
+
+    margin:auto;
+
+    border-radius:50%;
+
+    background:#198754;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-size:40px;
+
+    color:white;
+
+    margin-bottom:15px;
+
+}
+
+.login-card h2{
+
+    font-weight:700;
+
+    color:#14532d;
+
+}
+
+.login-card p{
+
+    color:gray;
+
+    margin-bottom:30px;
+
+}
+
+/* ===========================
+   INPUT
+=========================== */
+
+label{
+
+    font-weight:500;
+
+    margin-bottom:8px;
+
+}
+
+.input-group{
+
+    margin-top:8px;
+
+}
+
+.input-group-text{
+
+    background:white;
+
+    border-radius:12px 0 0 12px;
+
+}
+
+.form-control{
+
+    height:55px;
+
+    border-radius:0 12px 12px 0;
+
+    border:1px solid #ddd;
+
+}
+
+.form-control:focus{
+
+    border-color:#198754;
+
+    box-shadow:0 0 12px rgba(25,135,84,.25);
+
+}
+
+.eye{
+
+    cursor:pointer;
+
+}
+
+/* ===========================
+   REMEMBER
+=========================== */
+
+.remember{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin:20px 0;
+
+    font-size:15px;
+
+}
+
+.remember a{
+
+    text-decoration:none;
+
+    color:#198754;
+
+}
+
+/* ===========================
+   BUTTON
+=========================== */
+
+.login-btn{
+
+    height:55px;
+
+    border-radius:14px;
+
+    font-size:18px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.login-btn:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 12px 25px rgba(25,135,84,.35);
+
+}
+
+/* ===========================
+   REGISTER
+=========================== */
+
+.register{
+
+    text-align:center;
+
+    margin-top:30px;
+
+}
+
+.register a{
+
+    text-decoration:none;
+
+    font-weight:600;
+
+    color:#198754;
+
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:992px){
+
+.left-panel{
+
+display:none;
+
+}
+
+.login-card{
+
+width:95%;
+
+padding:30px;
+
+}
+
+body{
+
+overflow:auto;
+
+}
+
+}

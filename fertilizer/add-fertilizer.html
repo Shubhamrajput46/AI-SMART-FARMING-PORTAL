@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<title>Add Fertilizer</title>
+
+
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+<link rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+
+<link rel="stylesheet" href="../css/dashboard.css">
+
+
+</head>
+
+
+<body>
+
+
+
+<div class="dashboard-container">
+
+
+
+<!-- ================= Sidebar ================= -->
+
+
+<div class="sidebar">
+
+
+<div class="logo">
+
+🌾 AI Smart Farming
+
+</div>
+
+
+
+<ul>
+
+
+<li>
+
+<a href="../dashboard.html">
+
+<i class="bi bi-grid-fill"></i>
+
+Dashboard
+
+</a>
+
+</li>
+
+
+
+<li>
+
+<a href="../farmer/profile.html">
+
+<i class="bi bi-person-circle"></i>
+
+My Profile
+
+</a>
+
+</li>
+
+
+
+
+<li>
+
+<a href="../land/land-list.html">
+
+<i class="bi bi-map-fill"></i>
+
+Land
+
+</a>
+
+</li>
+
+
+
+
+<li>
+
+<a href="../crops/crop-list.html">
+
+<i class="bi bi-tree-fill"></i>
+
+Crop
+
+</a>
+
+</li>
+
+
+
+
+<li class="active">
+
+<a href="fertilizer-list.html">
+
+<i class="bi bi-droplet-fill"></i>
+
+Fertilizer
+
+</a>
+
+</li>
+
+
+
+
+<li>
+
+<a href="../irrigation/irrigation.html">
+
+<i class="bi bi-water"></i>
+
+Irrigation
+
+</a>
+
+</li>
+
+
+
+
+<li>
+
+<a href="../expense/expense-list.html">
+
+<i class="bi bi-wallet-fill"></i>
+
+Expense
+
+</a>
+
+</li>
+
+
+
+
+<li>
+
+<a href="../workers/worker-list.html">
+
+<i class="bi bi-people-fill"></i>
+
+Workers
+
+</a>
+
+</li>
+
+
+
+
+<li>
+
+<a href="../sales/sales-list.html">
+
+<i class="bi bi-cart-fill"></i>
+
+Sales
+
+</a>
+
+</li>
+
+
+
+
+<li>
+
+<a href="../weather/weather.html">
+
+<i class="bi bi-cloud-sun-fill"></i>
+
+Weather
+
+</a>
+
+</li>
+
+
+
+
+<li>
+
+<a href="../reports/reports.html">
+
+<i class="bi bi-bar-chart-fill"></i>
+
+Reports
+
+</a>
+
+</li>
+
+
+
+
+<li>
+
+<a href="../ai/crop-recommendation.html">
+
+<i class="bi bi-cpu-fill"></i>
+
+AI Recommendation
+
+</a>
+
+</li>
+
+
+
+</ul>
+
+
+</div>
+
+
+
+
+
+<!-- ================= Main Content ================= -->
+
+
+<div class="main-content">
+
+
+
+<div class="topbar">
+
+
+<h2>
+
+Add Fertilizer
+
+</h2>
+
+
+
+
+<div class="top-right">
+
+
+
+<div class="notification">
+
+
+<i class="bi bi-bell-fill"></i>
+
+
+<span class="badge-count">
+
+3
+
+</span>
+
+
+</div>
+
+
+
+
+<div class="user-info">
+
+
+<img src="../images/profile.jpg">
+
+
+<b>
+
+Shubham
+
+</b>
+
+
+</div>
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+<div class="content">
+    <!-- ================= Add Fertilizer Form ================= -->
+
+
+<div class="card shadow-sm border-0 rounded-4">
+
+
+<div class="card-body p-4">
+
+
+
+<h4 class="mb-4">
+
+<i class="bi bi-droplet-fill text-success"></i>
+
+Fertilizer Information
+
+</h4>
+
+
+
+
+<form id="fertilizerForm">
+
+
+
+<div class="row">
+
+
+
+
+
+<!-- Fertilizer ID -->
+
+
+<div class="col-md-6 mb-3">
+
+
+<label class="form-label">
+
+Fertilizer ID
+
+</label>
+
+
+<input
+
+type="text"
+
+class="form-control"
+
+placeholder="Example F005"
+
+required>
+
+
+</div>
+
+
+
+
+
+
+
+<!-- Fertilizer Name -->
+
+
+<div class="col-md-6 mb-3">
+
+
+<label class="form-label">
+
+Fertilizer Name
+
+</label>
+
+
+<input
+
+type="text"
+
+class="form-control"
+
+placeholder="Enter Fertilizer Name"
+
+required>
+
+
+</div>
+
+
+
+
+
+
+
+
+<!-- Fertilizer Type -->
+
+
+<div class="col-md-6 mb-3">
+
+
+<label class="form-label">
+
+Fertilizer Type
+
+</label>
+
+
+<select class="form-select">
+
+
+<option selected disabled>
+
+Select Type
+
+</option>
+
+
+<option>
+
+Organic
+
+</option>
+
+
+<option>
+
+Chemical
+
+</option>
+
+
+</select>
+
+
+</div>
+
+
+
+
+
+
+
+
+<!-- Quantity -->
+
+
+<div class="col-md-6 mb-3">
+
+
+<label class="form-label">
+
+Quantity (Kg)
+
+</label>
+
+
+<input
+
+type="number"
+
+class="form-control"
+
+placeholder="Enter Quantity">
+
+
+</div>
+
+
+
+
+
+
+
+
+<!-- Price -->
+
+
+<div class="col-md-6 mb-3">
+
+
+<label class="form-label">
+
+Price ($)
+
+</label>
+
+
+<input
+
+type="number"
+
+class="form-control"
+
+placeholder="Enter Price">
+
+
+</div>
+
+
+
+
+
+
+
+
+<!-- Applied Crop -->
+
+
+<div class="col-md-6 mb-3">
+
+
+<label class="form-label">
+
+Applied Crop
+
+</label>
+
+
+<select class="form-select">
+
+
+<option selected disabled>
+
+Select Crop
+
+</option>
+
+
+<option>
+
+Wheat 🌾
+
+</option>
+
+
+<option>
+
+Soybean 🌱
+
+</option>
+
+
+<option>
+
+Rice 🌾
+
+</option>
+
+
+<option>
+
+Cotton 🌱
+
+</option>
+
+
+</select>
+
+
+</div>
+
+
+
+
+
+
+
+
+<!-- Application Date -->
+
+
+<div class="col-md-6 mb-3">
+
+
+<label class="form-label">
+
+Application Date
+
+</label>
+
+
+<input
+
+type="date"
+
+class="form-control">
+
+
+</div>
+
+
+
+
+
+
+
+
+<!-- Expiry Date -->
+
+
+<div class="col-md-6 mb-3">
+
+
+<label class="form-label">
+
+Expiry Date
+
+</label>
+
+
+<input
+
+type="date"
+
+class="form-control">
+
+
+</div>
+
+
+
+
+
+
+
+
+<!-- Supplier Name -->
+
+
+<div class="col-md-6 mb-3">
+
+
+<label class="form-label">
+
+Supplier Name
+
+</label>
+
+
+<input
+
+type="text"
+
+class="form-control"
+
+placeholder="Enter Supplier Name">
+
+
+</div>
+
+
+
+
+
+
+
+
+<!-- Stock Status -->
+
+
+<div class="col-md-6 mb-3">
+
+
+<label class="form-label">
+
+Stock Status
+
+</label>
+
+
+<select class="form-select">
+
+
+<option>
+
+Available
+
+</option>
+
+
+<option>
+
+Low Stock
+
+</option>
+
+
+<option>
+
+Out of Stock
+
+</option>
+
+
+</select>
+
+
+</div>
+
+
+
+
+
+
+
+
+<!-- Fertilizer Image -->
+
+
+<div class="col-md-6 mb-3">
+
+
+<label class="form-label">
+
+Upload Fertilizer Image
+
+</label>
+
+
+<input
+
+type="file"
+
+class="form-control"
+
+accept="image/*">
+
+
+</div>
+
+
+
+
+
+
+
+
+<!-- Description -->
+
+
+<div class="col-md-12 mb-3">
+
+
+<label class="form-label">
+
+Description
+
+</label>
+
+
+<textarea
+
+class="form-control"
+
+rows="4"
+
+placeholder="Enter fertilizer details">
+
+</textarea>
+
+
+</div>
+<!-- ================= Buttons ================= -->
+
+
+<div class="mt-4 text-end">
+
+
+<a href="fertilizer-list.html"
+
+class="btn btn-secondary me-2">
+
+
+<i class="bi bi-arrow-left"></i>
+
+Back
+
+
+</a>
+
+
+
+
+
+
+<button
+
+type="reset"
+
+class="btn btn-warning me-2">
+
+
+<i class="bi bi-arrow-clockwise"></i>
+
+Reset
+
+
+</button>
+
+
+
+
+
+
+
+<button
+
+type="submit"
+
+class="btn btn-success">
+
+
+<i class="bi bi-save-fill"></i>
+
+Save Fertilizer
+
+
+</button>
+
+
+
+</div>
+
+
+
+
+
+</form>
+
+
+
+</div>
+
+
+</div>
+
+
+
+
+</div>
+<!-- End Content -->
+
+
+
+</div>
+<!-- End Main Content -->
+
+
+
+</div>
+<!-- End Dashboard Container -->
+
+
+
+
+
+
+
+<script>
+
+
+// ===============================
+// Add Fertilizer Submit
+// ===============================
+
+
+document
+
+.getElementById("fertilizerForm")
+
+.addEventListener("submit",function(e){
+
+
+
+e.preventDefault();
+
+
+
+alert("✅ Fertilizer Added Successfully!");
+
+
+
+this.reset();
+
+
+
+});
+
+
+
+</script>
+
+
+
+
+
+
+</body>
+
+</html>

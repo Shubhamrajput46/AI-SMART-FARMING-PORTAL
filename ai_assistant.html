@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI Farming Assistant | AI Smart Farming Portal</title>
+
+    <!-- Bootstrap -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="css/ai_assistant.css">
+
+</head>
+
+<body>
+
+<div class="container-fluid">
+
+<div class="row">
+
+<!-- ===================== Sidebar ===================== -->
+
+<div class="col-lg-2 sidebar">
+
+<div class="logo">
+
+<h3>
+
+<i class="bi bi-tree-fill"></i>
+
+AI Farming
+
+</h3>
+
+</div>
+
+<ul class="nav flex-column mt-4">
+
+<li class="nav-item">
+
+<a href="dashboard.html" class="nav-link">
+
+<i class="bi bi-speedometer2"></i>
+
+Dashboard
+
+</a>
+
+</li>
+
+<li class="nav-item">
+
+<a href="farmer.html" class="nav-link">
+
+<i class="bi bi-people-fill"></i>
+
+Farmers
+
+</a>
+
+</li>
+
+<li class="nav-item">
+
+<a href="land.html" class="nav-link">
+
+<i class="bi bi-map-fill"></i>
+
+Land
+
+</a>
+
+</li>
+
+<li class="nav-item">
+
+<a href="crop.html" class="nav-link">
+
+<i class="bi bi-flower1"></i>
+
+Crop
+
+</a>
+
+</li>
+
+<li class="nav-item">
+
+<a href="fertilizer.html" class="nav-link">
+
+<i class="bi bi-droplet-fill"></i>
+
+Fertilizer
+
+</a>
+
+</li>
+
+<li class="nav-item">
+
+<a href="irrigation.html" class="nav-link">
+
+<i class="bi bi-water"></i>
+
+Irrigation
+
+</a>
+
+</li>
+
+<li class="nav-item">
+
+<a href="pest_detection.html" class="nav-link">
+
+<i class="bi bi-bug-fill"></i>
+
+Pest Detection
+
+</a>
+
+</li>
+
+<li class="nav-item">
+
+<a href="loan_tracker.html" class="nav-link">
+
+<i class="bi bi-bank"></i>
+
+Loan Tracker
+
+</a>
+
+</li>
+
+<li class="nav-item">
+
+<a href="ai_assistant.html" class="nav-link active">
+
+<i class="bi bi-robot"></i>
+
+AI Assistant
+
+</a>
+
+</li>
+
+</ul>
+
+</div>
+
+<!-- ===================== Main Content ===================== -->
+
+<div class="col-lg-10 main-content">
+
+<div class="topbar d-flex justify-content-between align-items-center">
+
+<div>
+
+<h2>
+
+🤖 AI Farming Assistant
+
+</h2>
+
+<p>
+
+Ask anything about farming, crops, fertilizer and diseases.
+
+</p>
+
+</div>
+
+<button class="btn btn-success" id="clearChat">
+
+<i class="bi bi-trash"></i>
+
+Clear Chat
+
+</button>
+
+</div>
+
+<!-- Quick Suggestions -->
+
+<div class="row mt-4">
+
+<div class="col-lg-12">
+
+<div class="suggestion-box">
+
+<button class="btn btn-outline-success suggestion">
+
+🌾 Crop Advice
+
+</button>
+
+<button class="btn btn-outline-success suggestion">
+
+💧 Irrigation
+
+</button>
+
+<button class="btn btn-outline-success suggestion">
+
+🌱 Fertilizer
+
+</button>
+
+<button class="btn btn-outline-success suggestion">
+
+🐛 Pest Control
+
+</button>
+
+<button class="btn btn-outline-success suggestion">
+
+🌦 Weather
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- Chat Window -->
+
+<div class="chat-container mt-4">
+
+<div class="chat-header">
+
+<div>
+
+<h4>
+
+🤖 AI Farming Assistant
+
+</h4>
+
+<small>
+
+Online
+
+</small>
+
+</div>
+
+<div>
+
+<i class="bi bi-three-dots-vertical"></i>
+
+</div>
+
+</div>
+
+<div class="chat-body" id="chatBody">
+
+<!-- AI Welcome -->
+
+<div class="message ai-message">
+
+<div class="avatar">
+
+🤖
+
+</div>
+
+<div class="message-box">
+
+Hello Farmer 👋
+
+<br><br>
+
+I can help you with:
+
+<ul>
+
+<li>Crop Recommendation</li>
+
+<li>Fertilizer Guide</li>
+
+<li>Pest & Disease</li>
+
+<li>Irrigation Planning</li>
+
+<li>Weather Advice</li>
+
+</ul>
+
+Ask me anything 😊
+
+</div>
+
+</div>
+<!-- Farmer Message -->
+
+<div class="message user-message">
+
+    <div class="message-box">
+
+        How can I increase wheat production?
+
+    </div>
+
+    <div class="avatar user-avatar">
+
+        👨‍🌾
+
+    </div>
+
+</div>
+
+<!-- AI Reply -->
+
+<div class="message ai-message">
+
+    <div class="avatar">
+
+        🤖
+
+    </div>
+
+    <div class="message-box">
+
+        To improve wheat production:
+
+        <br><br>
+
+        ✅ Use certified seeds.
+
+        <br>
+
+        ✅ Apply NPK fertilizer based on soil testing.
+
+        <br>
+
+        ✅ Irrigate at Crown Root Initiation stage.
+
+        <br>
+
+        ✅ Monitor pests regularly.
+
+        <br>
+
+        ✅ Harvest at proper maturity.
+
+    </div>
+
+</div>
+
+<!-- Typing Indicator -->
+
+<div class="message ai-message typing-area" id="typingArea">
+
+    <div class="avatar">
+
+        🤖
+
+    </div>
+
+    <div class="typing">
+
+        <span></span>
+
+        <span></span>
+
+        <span></span>
+
+    </div>
+
+</div>
+
+</div>
+
+<!-- ===================== Chat Footer ===================== -->
+
+<div class="chat-footer">
+
+    <button class="btn btn-light voice-btn">
+
+        <i class="bi bi-mic-fill"></i>
+
+    </button>
+
+    <input
+        type="text"
+        id="userInput"
+        class="form-control"
+        placeholder="Ask your farming question...">
+
+    <button
+        class="btn btn-success"
+        id="sendBtn">
+
+        <i class="bi bi-send-fill"></i>
+
+    </button>
+
+</div>
+
+</div>
+
+<!-- Quick Information Cards -->
+
+<div class="row mt-4">
+
+<div class="col-lg-3 col-md-6 mb-3">
+
+<div class="quick-card">
+
+<i class="bi bi-tree-fill"></i>
+
+<h5>Crop Guide</h5>
+
+<p>
+
+Best farming practices.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="col-lg-3 col-md-6 mb-3">
+
+<div class="quick-card">
+
+<i class="bi bi-droplet-half"></i>
+
+<h5>Irrigation</h5>
+
+<p>
+
+Water scheduling.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="col-lg-3 col-md-6 mb-3">
+
+<div class="quick-card">
+
+<i class="bi bi-bug-fill"></i>
+
+<h5>Pest Control</h5>
+
+<p>
+
+Identify diseases.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="col-lg-3 col-md-6 mb-3">
+
+<div class="quick-card">
+
+<i class="bi bi-cloud-sun-fill"></i>
+
+<h5>Weather</h5>
+
+<p>
+
+Weather guidance.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="js/ai_assistant.js"></script>
+
+</body>
+
+</html>

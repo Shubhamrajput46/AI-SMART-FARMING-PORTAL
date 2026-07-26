@@ -1,0 +1,319 @@
+/* ==========================================
+   AI SMART FARMING PORTAL
+   Loan & Subsidy Tracker
+========================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f5f7fa;
+}
+
+/* ===========================
+Sidebar
+=========================== */
+
+.sidebar{
+    min-height:100vh;
+    background:#1b5e20;
+    padding:20px;
+    color:#fff;
+}
+
+.logo{
+    text-align:center;
+    margin-bottom:25px;
+}
+
+.logo h3{
+    font-weight:700;
+}
+
+.nav-link{
+    color:#d8ffd8;
+    margin:8px 0;
+    border-radius:10px;
+    padding:12px 15px;
+    transition:.3s;
+}
+
+.nav-link:hover{
+    background:#2e7d32;
+    color:#fff;
+}
+
+.nav-link.active{
+    background:#43a047;
+    color:#fff;
+}
+
+.nav-link i{
+    margin-right:10px;
+}
+
+/* ===========================
+Main Content
+=========================== */
+
+.main-content{
+    padding:30px;
+}
+
+.topbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:20px;
+}
+
+.topbar h2{
+    color:#1b5e20;
+    font-weight:700;
+}
+
+.topbar p{
+    color:#666;
+}
+
+/* ===========================
+Summary Cards
+=========================== */
+
+.loan-card{
+
+    padding:25px;
+
+    border-radius:18px;
+
+    color:#fff;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.12);
+
+    transition:.3s;
+
+}
+
+.loan-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.loan-card h5{
+
+    opacity:.9;
+
+}
+
+.loan-card h2{
+
+    margin:15px 0;
+
+    font-weight:700;
+
+}
+
+/* Card Colors */
+
+.total{
+
+background:linear-gradient(135deg,#43a047,#2e7d32);
+
+}
+
+.approved{
+
+background:linear-gradient(135deg,#1e88e5,#1565c0);
+
+}
+
+.pending{
+
+background:linear-gradient(135deg,#ff9800,#ef6c00);
+
+}
+
+.subsidy{
+
+background:linear-gradient(135deg,#8e24aa,#6a1b9a);
+
+}
+
+/* ===========================
+Cards
+=========================== */
+
+.card{
+
+    border:none;
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+}
+
+.card-header{
+
+    padding:18px;
+
+    font-weight:600;
+
+}
+
+.card-body{
+
+    padding:25px;
+
+}
+
+/* ===========================
+Table
+=========================== */
+
+.table thead{
+
+    background:#43a047;
+
+    color:#fff;
+
+}
+
+.table tbody tr{
+
+    transition:.3s;
+
+}
+
+.table tbody tr:hover{
+
+    background:#f3fff4;
+
+}
+
+/* ===========================
+Scheme Cards
+=========================== */
+
+.scheme-card{
+
+    background:#fff;
+
+    padding:25px;
+
+    border-radius:18px;
+
+    box-shadow:0 10px 20px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+}
+
+.scheme-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.scheme-card h4{
+
+    font-weight:700;
+
+    color:#1b5e20;
+
+}
+
+.scheme-card p{
+
+    color:#666;
+
+    min-height:60px;
+
+}
+
+/* ===========================
+Progress
+=========================== */
+
+.progress{
+
+    height:14px;
+
+    border-radius:15px;
+
+    overflow:hidden;
+
+    margin-top:8px;
+
+}
+
+.progress-bar{
+
+    font-weight:600;
+
+}
+
+/* ===========================
+Buttons
+=========================== */
+
+.btn{
+
+    border-radius:10px;
+
+}
+
+.btn-success{
+
+    background:#43a047;
+
+    border:none;
+
+}
+
+.btn-success:hover{
+
+    background:#2e7d32;
+
+}
+
+/* ===========================
+Responsive
+=========================== */
+
+@media(max-width:991px){
+
+.sidebar{
+
+min-height:auto;
+
+}
+
+.topbar{
+
+flex-direction:column;
+
+align-items:flex-start;
+
+gap:15px;
+
+}
+
+.main-content{
+
+padding:20px;
+
+}
+
+.loan-card{
+
+margin-bottom:20px;
+
+}
+
+}
